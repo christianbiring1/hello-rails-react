@@ -1,24 +1,59 @@
-# README
+# Hello-react-rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Description of the project.
 
-Things you may want to cover:
+In this exercise I had to connect previous knowledge with new knowledge as I get a chance to use Webpack with `jsbundling-rails gem`.
 
-* Ruby version
+## Built With
 
-* System dependencies
+* Ruby on Rails
+* Webpack
+* PostgreSQL
+* React
 
-* Configuration
+## Live Demo
+(Not available)
+### Prerequisites
 
-* Database creation
+Tu run this project in your local environment, You will need to have the following tools installed loally :
 
-* Database initialization
+* `Ruby 3.0+`
+* `Rails 6.0+`
+* `PostgreSQL` version 14+
 
-* How to run the test suite
+## Set up
 
-* Services (job queues, cache servers, search engines, etc.)
+* `git clone git@github.com:christianbiring1/hello-rails-react.git`
+* `cd Budget_App`
+* `bundle install`
+* `rails db:create`
+* `rails db:migrate`
+* `rails db:seed`
+* `rails s`
+* Open up the `localhost` in your browser
 
-* Deployment instructions
+## Author
 
-* ...
+👤 **Christian biringanine**
+
+* GitHub: [@christianbiring1](https://github.com/christianbiring1)
+* Twitter: [@christianbirin4](https://twitter.com/christianbirin4)
+* LinkedIn: [Christian Biringanine](https://linkedin.com/in/christian-biringanine/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/christianbiring1/hello-rails-react/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+* Hat tip to anyone who will take a glance to this project
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
