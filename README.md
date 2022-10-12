@@ -31,6 +31,8 @@ Tu run this project in your local environment, You will need to have the followi
 * `rails db:create`
 * `rails db:migrate`
 * `rails db:seed`
+* `npm install`
+* `npm run build`
 * `rails s`
 * Open up the `localhost` in your browser
 
