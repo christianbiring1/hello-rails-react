@@ -26,7 +26,7 @@ Tu run this project in your local environment, You will need to have the followi
 ## Set up
 
 * `git clone git@github.com:christianbiring1/hello-rails-react.git`
-* `cd Budget_App`
+* `cd hello-rails-react`
 * `bundle install`
 * `rails db:create`
 * `rails db:migrate`

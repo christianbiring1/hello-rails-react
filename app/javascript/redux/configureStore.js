@@ -1,4 +1,5 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import axios from "axios";
 
 const BASEURL = 'api/v1/messages';
 const GET_MESSAGE = 'rails/redux/GET_MESSAGE'
@@ -6,15 +7,17 @@ const GET_MESSAGE = 'rails/redux/GET_MESSAGE'
 const getData = (messages) => {
   return {
     type: GET_MESSAGE,
-    payload: messages
+    messages,
   }
 }
 
 export const fetchMessages = () => async (dispatch) => {
   const messages = [];
-  fetch(BASEURL)
-  .then((response) => response.json())
-  .then((data) => messages.push(data));
+  const response = await axios.get(BASEURL);
+  const messageData = await response.data;
+  messageData.forEach((msg) => {
+    messages.push(msg.content);
+  })
   dispatch(getData(messages))
 }
 
@@ -27,7 +30,9 @@ const dataReducer = (state = [], action) => {
   }
 };
 
-const store = configureStore({reducer: dataReducer});
-export default store;
+const rootReducer = combineReducers({
+  message: dataReducer,
+});
 
-// console.log(store);
+const store = configureStore({ reducer: rootReducer });
+export default store;

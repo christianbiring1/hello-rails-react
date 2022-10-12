@@ -4,7 +4,7 @@ import { fetchMessages } from "../redux/configureStore";
 import { useDispatch, useSelector } from "react-redux";
 
 const Greeting = () => {
-  const message = useSelector((state) => state.message);
+  const messages = useSelector((state) => state.message);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const Greeting = () => {
     <div>
       <h1>Hello react Rails!</h1>
         {
-          message.map((item) => <Salutation key={item.id} content={item.content} />)
+          messages.map((item) => <Salutation content={item} />)
         }
     </div>
   );
