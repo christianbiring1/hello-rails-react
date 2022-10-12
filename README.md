@@ -12,7 +12,9 @@ In this exercise I had to connect previous knowledge with new knowledge as I get
 * React
 
 ## Live Demo
+
 (Not available)
+
 ### Prerequisites
 
 Tu run this project in your local environment, You will need to have the following tools installed loally :
